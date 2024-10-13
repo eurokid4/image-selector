@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>image selector</title>
+    </head>
+    <body>
+        <p style="font-family: 'Segoe UI';">Your image</p>
+        <p style="font-family: monospace;" id="link" ></p>
+        <img id="photo" src="placeholder.jpg"  width="400px" height="300px" alt="my-img" />
+        <script>
+            var imege
+            function re(){
+            var imege=prompt('Enter an image url','');
+            photo.src=imege;
+            document.getElementById("link").innerHTML=imege;
+            };
+            function resize(){
+                photo.width=prompt('Enter Width',400);
+                photo.height=prompt('Enter Height',300);;
+            };
+            function bebek(){
+                open(imege)
+            }
+        </script>
+        <br>
+        <button onclick="re()">Insert an image</button>
+        <button onclick="resize()">Resize</button>
+        <button onclick="bebek()">Fullscreen</button>
+    </body>
+</html>
